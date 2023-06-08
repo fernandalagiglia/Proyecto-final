@@ -26,6 +26,11 @@ h1 {padding: 2%; text-align: center; }
     display: flex;
     align-items: center;
 }
+.concierto1 img:hover,
+.concierto2 img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 
 .categoriasheader {
     display: flex;
