@@ -77,12 +77,20 @@ h1 {padding: 2%; text-align: center; }
 }
 
 .container {
-    margin-top: 40px;
+    margin-top: 60px;
 }
+.container h4{
+    color: white;
+}
+.container p{
+    color: white;
+}
+
 
 .container h4{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 10%; 
 }
 
 .container h2 {
@@ -91,11 +99,11 @@ h1 {padding: 2%; text-align: center; }
 }
 
 .concierto1{
-    background-color: rgb(224, 224, 13);
+    background-color: black;  
 }
 
 .concierto2{
-    background-color: rgb(224, 224, 13);
+    background-color: black;
 }
 
 .concierto1 .concierto2 {
@@ -129,17 +137,31 @@ h1 {padding: 2%; text-align: center; }
     margin:20px;
     margin-bottom: 15px;
 }
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.ver-fotos {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
+
+.ver-fotos:hover {
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+.ver-fotos a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.ver-fotos a:hover {
+    text-decoration: underline;
+}
+
 
 @keyframes slideInRight {
     0% {
