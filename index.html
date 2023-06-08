@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!--Mi hoja de estilos va después porque pisa lo que hace Bootstrap-->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light sticky-top" id="header">
+        <div class="container-fluid">
+            <a href="index.html" class="logo"><img src="img/Logo.png" class="logo" alt="EdSheeran"></a>
+        </div>
+        <div class="categoriasheader">
+            <a href="discos.html" class="discos">Discografia</a>
+            <a href="galeria.html" class="galeria">Galeria</a>
+            <a href="curriculum.html" class="cv">Curriculum</a>
+            <a href="contacto.html" class="contacto">Contacto</a>
+        </div>
+    </header>
+
+    <div class="foto-principal">
+        <img src="img/enconcierto.jpg" alt="Ed Sheeran en concierto" class="foto1">
+    </div>
+
+    <div class="container">
+        <h2>Conciertos épicos</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="concierto1 animated fadeInLeft">
+                    <h4>Concierto en Varsovia</h4>
+                    <img src="img/concierto1.jpg" alt="Concierto en Varsovia">
+                    <p>Ed Sheeran llegó a Varsovia para ofrecer un concierto inolvidable que dejó a los fanáticos emocionados y extasiados. Al aparecer en el escenario, el cantante fue recibido con una ovación increíble. Con su guitarra en mano y su voz cautivadora, hizo vibrar al público con cada canción.</p>
+                    <p>Ver fotos del concierto en <a href="galeria.html"> Galeria </a></p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="concierto2 animated fadeInRight">
+                    <h4>Concierto en Madrid</h4>
+                    <img src="img/concierto2.jpg" alt="Concierto en Madrid">
+                    <p>El concierto en Madrid fue una experiencia inigualable. Los ritmos enérgicos hicieron bailar a la multitud y las baladas emotivas conmovieron a todos, logrando un verdadero torbellino de emociones. Lo más destacado fue el momento íntimo donde conectó con el público.</p>
+                    <p>Ver fotos del concierto en <a href="galeria.html"> Galeria </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Discos</h2>
+        <div class="row">
+          <div class="col-3">
+            <a href="discografia.html">
+            <div class="image-container">
+              <img src="img/equals.jpg" alt="Imagen 1">
+            </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="discografia.html">
+            <div class="image-container">
+              <img src="img/subtract.jpg" alt="Imagen 2">
+            </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="discografia.html">
+            <div class="image-container">
+              <img src="img/divide.jpg" alt="Imagen 3">
+            </div>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="discografia.html">
+            <div class="image-container">
+              <img src="img/multiply.jpg" alt="Imagen 4">
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="container col-12">
+            <form action="enviado" method="post">
+                <div class="form-titulo">
+                    <h3>Suscribite a nuestro Newsletter para recibir novedades sobre Ed Sheeran</h3>
+                </div>
+                <input type="hidden" name="form-name" value="form 1">
+                <input type="hidden" name="formindex" value="form 1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <input class="form-control" placeholder="Nombre" name="nombre"
+                            required aria-label="default input example">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleFormControlInput1" required
+                            class="form-label">Mail</label>
+                            <input type="email" class="form-control" required
+                            id="exampleFormControlInput1" placeholder="name@example.com"
+                            name="email">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Suscribirse</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+
+    
+
+    <!--Bootstrap Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Rubik:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{margin: 0; padding: 0}
+
+.bg1{background: tomato;}
+.bg2{background: blue;}
+.bg3{background: green;}
+.bg4{background: yellow;}
+.bg5{background: purple;}
+
+/*NO PONER LA CLASE .CONTAINER porque pisa lo que dice Bootstrap*/
+
+.logo { width: 210px; margin-right: auto;}
+/*Hover logo*/
+.logo {
+    transition: transform 0.1s ease-in-out;
+    }
+  
+.logo:hover {
+    transform: scale(1.1);
+    }
+h1 {padding: 2%; text-align: center; }
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.categoriasheader {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1em;
+}
+/*Hover categorias*/
+.categoriasheader a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+.categoriasheader a:hover {
+    transform: scale(1.2);
+}
+
+#header a.logo {
+    margin-right: auto;
+}
+#header a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#header {
+    background-color: yellow;
+}
+.foto-principal {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto1 {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.container h4{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 20px; 
+}
+
+.concierto1{
+    background-color: rgb(224, 224, 13);
+}
+
+.concierto2{
+    background-color: rgb(224, 224, 13);
+}
+
+.concierto1 .concierto2 {
+    text-align: center;
+}
+
+.concierto1 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.concierto2 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.concierto1 p{
+    margin:20px;
+    margin-bottom: 15px;
+}
+
+.concierto2 p{
+    margin:20px;
+    margin-bottom: 15px;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.concierto1 {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.concierto2 {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-container:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    opacity: 0.7;
+  }
+
+  form {
+    background-color: yellow;
+    padding: 20px;
+  }
+
+  .btn {
+    width: fit-content;
+    float: left;
+  }
